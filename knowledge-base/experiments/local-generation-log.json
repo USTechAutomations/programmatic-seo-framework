@@ -1,0 +1,34 @@
+[
+  {
+    "timestamp": "2025-12-31T16:54:35.013Z",
+    "topic": "AI Lead Nurturing for Real Estate",
+    "keyword": "ai lead nurturing real estate",
+    "intent": "informational",
+    "model": "qwen2.5:7b-instruct",
+    "generatedBy": "qwen2.5:7b-instruct",
+    "slug": "ai-lead-nurturing-for-real-estate",
+    "wordCount": 1529,
+    "uniquenessScore": 0.72,
+    "qualityScore": 0.4,
+    "differentiationReport": {
+      "uniqueFactCount": 1,
+      "uniquePhrases": [
+        "{\n  \"title\": \"ai lead nurturing for real estate: beginner’s guide\",\n  \"metadescription\": \"learn how to effectively use ai in lead nurturing for real estate",
+        " get step-by-step strategies, case studies, and more",
+        "\",\n  \"slug\": \"ai-lead-nurturing-real-estate-beginners-guide\",\n  \"content\": \"# ai lead nurturing for real estate: beginner’s guide\\n\\n## introduction\\naccording to a study by forbes insights and pegasystems (2021), 64% of real estate companies are currently using ai for lead generation and management",
+        " this highlights the growing importance of integrating ai into your marketing strategies, especially when it comes to nurturing leads effectively",
+        "\\n\\nai can significantly enhance your real estate business by providing personalized experiences that resonate with potential buyers or sellers"
+      ],
+      "angleScore": 1,
+      "dataScore": 0.2,
+      "insightScore": 1,
+      "overallScore": 0.72,
+      "passesThreshold": false,
+      "issues": [
+        "Only 1/3 data points included"
+      ]
+    },
+    "outputPath": "/home/gmullins/programmatic-seo-framework/content/drafts/2025-12-31-ai-lead-nurturing-for-real-estate.md",
+    "status": "draft"
+  }
+]
