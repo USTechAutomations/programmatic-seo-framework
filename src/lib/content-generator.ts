@@ -110,6 +110,12 @@ const CONTENT_ANGLES = {
     'pros-cons',                // Balanced evaluation
     'industry-specific',        // Vertical focus
   ],
+  navigational: [
+    'resource-hub',             // Central reference point
+    'directory-style',          // Organized listings
+    'quick-reference',          // Fast lookup format
+    'location-based',           // Geographic focus
+  ],
 };
 
 // -----------------------------------------------------------------------------
