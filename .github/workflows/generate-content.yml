@@ -1,11 +1,14 @@
 # =============================================================================
-# GitHub Actions: Scheduled Content Generation
+# GitHub Actions: Content Generation Pipeline
 # =============================================================================
-# Automatically generates new blog content on a schedule.
-# Uses the AI content generation pipeline with uniqueness checks.
+# STATUS: DORMANT - Disabled on 2026-01-16
+# To re-enable: Remove 'if: false' from the generate job below
+# =============================================================================
+# Automatically generates blog content using the 3-pass architecture.
+# Supports: enterprise blog posts, geo-farming analysis, batch generation
 # =============================================================================
 
-name: Generate Blog Content
+name: Generate Blog Content [DISABLED]
 
 on:
   schedule:
@@ -14,13 +17,30 @@ on:
 
   workflow_dispatch:
     inputs:
-      topic:
-        description: 'Topic for the blog post'
+      generation_type:
+        description: 'Type of content to generate'
         required: true
+        type: choice
+        default: 'enterprise'
+        options:
+          - enterprise
+          - geo-farming
+          - geo-farming-batch
+      topic:
+        description: 'Topic for the blog post (for enterprise) or location (for geo-farming)'
+        required: false
         type: string
       keyword:
-        description: 'Target SEO keyword'
-        required: true
+        description: 'Target SEO keyword (for enterprise)'
+        required: false
+        type: string
+      zip_code:
+        description: 'ZIP code (for geo-farming)'
+        required: false
+        type: string
+      state:
+        description: 'State abbreviation (for geo-farming, e.g., AZ)'
+        required: false
         type: string
       intent:
         description: 'Search intent type'
@@ -45,6 +65,7 @@ jobs:
   generate:
     name: Generate Content
     runs-on: ubuntu-latest
+    if: false  # DISABLED - workflow is dormant
 
     steps:
       - name: Checkout repository
@@ -63,28 +84,48 @@ jobs:
         id: topic
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "type=${{ inputs.generation_type }}" >> $GITHUB_OUTPUT
             echo "topic=${{ inputs.topic }}" >> $GITHUB_OUTPUT
             echo "keyword=${{ inputs.keyword }}" >> $GITHUB_OUTPUT
+            echo "zip_code=${{ inputs.zip_code }}" >> $GITHUB_OUTPUT
+            echo "state=${{ inputs.state }}" >> $GITHUB_OUTPUT
             echo "intent=${{ inputs.intent }}" >> $GITHUB_OUTPUT
             echo "publish=${{ inputs.auto_publish }}" >> $GITHUB_OUTPUT
           else
             # For scheduled runs, use content calendar or random selection
-            # This is a placeholder - integrate with your content calendar
+            echo "type=enterprise" >> $GITHUB_OUTPUT
             echo "topic=AI Automation Best Practices" >> $GITHUB_OUTPUT
             echo "keyword=ai automation best practices" >> $GITHUB_OUTPUT
             echo "intent=informational" >> $GITHUB_OUTPUT
             echo "publish=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Generate content
+      - name: Generate Enterprise Content
+        if: steps.topic.outputs.type == 'enterprise'
         run: |
-          npm run generate -- \
-            --topic "${{ steps.topic.outputs.topic }}" \
-            --keyword "${{ steps.topic.outputs.keyword }}" \
-            --intent "${{ steps.topic.outputs.intent }}" \
-            --publish "${{ steps.topic.outputs.publish }}"
+          npm run generate:enterprise -- "${{ steps.topic.outputs.topic }}"
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LITELLM_PROXY_URL: ${{ secrets.LITELLM_PROXY_URL }}
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+
+      - name: Generate Geo-Farming Content
+        if: steps.topic.outputs.type == 'geo-farming'
+        run: |
+          npm run generate:geo-farming -- "${{ steps.topic.outputs.topic }}" "${{ steps.topic.outputs.zip_code }}" "${{ steps.topic.outputs.state }}"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LITELLM_PROXY_URL: ${{ secrets.LITELLM_PROXY_URL }}
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+
+      - name: Generate Geo-Farming Batch
+        if: steps.topic.outputs.type == 'geo-farming-batch'
+        run: |
+          npm run generate:geo-farming:batch
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LITELLM_PROXY_URL: ${{ secrets.LITELLM_PROXY_URL }}
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
 
       - name: Validate generated content
         run: npm run validate:content

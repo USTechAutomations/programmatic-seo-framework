@@ -1,6 +1,9 @@
 # =============================================================================
 # GitHub Actions: Programmatic SEO Blog Deployment
 # =============================================================================
+# STATUS: DORMANT - Disabled on 2026-01-16
+# To re-enable: Remove 'if: false' from all jobs below
+# =============================================================================
 # This workflow:
 # 1. Validates all content for quality and uniqueness
 # 2. Builds the Next.js site with static generation
@@ -8,7 +11,7 @@
 # 4. Updates metrics and logs
 # =============================================================================
 
-name: Deploy Programmatic SEO Blog
+name: Deploy Programmatic SEO Blog [DISABLED]
 
 on:
   push:
@@ -43,7 +46,7 @@ jobs:
   validate:
     name: Validate Content
     runs-on: ubuntu-latest
-    if: ${{ github.event.inputs.skip_validation != 'true' }}
+    if: false  # DISABLED - workflow is dormant
 
     steps:
       - name: Checkout repository
@@ -97,7 +100,7 @@ jobs:
     name: Build and Deploy
     runs-on: ubuntu-latest
     needs: [validate]
-    if: always() && (needs.validate.result == 'success' || needs.validate.result == 'skipped')
+    if: false  # DISABLED - workflow is dormant
 
     steps:
       - name: Checkout repository
@@ -181,7 +184,7 @@ jobs:
     name: Post-Deployment
     runs-on: ubuntu-latest
     needs: [build-deploy]
-    if: success()
+    if: false  # DISABLED - workflow is dormant
 
     steps:
       - name: Checkout repository
