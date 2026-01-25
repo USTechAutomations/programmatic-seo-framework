@@ -1,0 +1,825 @@
+{
+  "metadata": {
+    "lastUpdated": "2026-01-24",
+    "totalPlanned": 450,
+    "totalPublished": 212,
+    "nextBlogId": 213
+  },
+  "templateRotation": {
+    "lastUsed": ["COMPASS", "CATALYST", "PERSONA"],
+    "templates": ["ATLAS", "PERSONA", "CATALYST", "PLAYBOOK", "COMPASS", "BLUEPRINT"],
+    "note": "Never use same template twice in a row. Avoid last 2 templates used."
+  },
+  "pipeline": {
+    "nyc_metro": {
+      "name": "New York-Newark-Jersey City Metro",
+      "population": "20.1M",
+      "status": "planned",
+      "totalNeighborhoods": 100,
+      "rings": [
+        {
+          "ring": 1,
+          "name": "Inner Suburbs (10-15 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Hoboken", "state": "NJ", "county": "Hudson", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Jersey City Heights", "state": "NJ", "county": "Hudson", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Weehawken", "state": "NJ", "county": "Hudson", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Edgewater", "state": "NJ", "county": "Bergen", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Fort Lee", "state": "NJ", "county": "Bergen", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Cliffside Park", "state": "NJ", "county": "Bergen", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "North Bergen", "state": "NJ", "county": "Hudson", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Union City", "state": "NJ", "county": "Hudson", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "West New York", "state": "NJ", "county": "Hudson", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Guttenberg", "state": "NJ", "county": "Hudson", "medianPrice": 380000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 2,
+          "name": "Inner-Mid Suburbs (15-25 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Montclair", "state": "NJ", "county": "Essex", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "South Orange", "state": "NJ", "county": "Essex", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Maplewood", "state": "NJ", "county": "Essex", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Glen Ridge", "state": "NJ", "county": "Essex", "medianPrice": 900000, "status": "pending", "template": null},
+            {"id": null, "name": "Bloomfield", "state": "NJ", "county": "Essex", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Nutley", "state": "NJ", "county": "Essex", "medianPrice": 525000, "status": "pending", "template": null},
+            {"id": null, "name": "Belleville", "state": "NJ", "county": "Essex", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Kearny", "state": "NJ", "county": "Hudson", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Harrison", "state": "NJ", "county": "Hudson", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "East Orange", "state": "NJ", "county": "Essex", "medianPrice": 350000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 3,
+          "name": "Mid Suburbs - North (20-30 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Tenafly", "state": "NJ", "county": "Bergen", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Englewood", "state": "NJ", "county": "Bergen", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Teaneck", "state": "NJ", "county": "Bergen", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Hackensack", "state": "NJ", "county": "Bergen", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Paramus", "state": "NJ", "county": "Bergen", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Ridgewood", "state": "NJ", "county": "Bergen", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Glen Rock", "state": "NJ", "county": "Bergen", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Fair Lawn", "state": "NJ", "county": "Bergen", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Bergenfield", "state": "NJ", "county": "Bergen", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Dumont", "state": "NJ", "county": "Bergen", "medianPrice": 450000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 4,
+          "name": "Westchester NY (15-35 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Yonkers Downtown", "state": "NY", "county": "Westchester", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "New Rochelle", "state": "NY", "county": "Westchester", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "White Plains", "state": "NY", "county": "Westchester", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Scarsdale", "state": "NY", "county": "Westchester", "medianPrice": 1800000, "status": "pending", "template": null},
+            {"id": null, "name": "Bronxville", "state": "NY", "county": "Westchester", "medianPrice": 1500000, "status": "pending", "template": null},
+            {"id": null, "name": "Larchmont", "state": "NY", "county": "Westchester", "medianPrice": 1300000, "status": "pending", "template": null},
+            {"id": null, "name": "Mamaroneck", "state": "NY", "county": "Westchester", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Pelham", "state": "NY", "county": "Westchester", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Eastchester", "state": "NY", "county": "Westchester", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Tuckahoe", "state": "NY", "county": "Westchester", "medianPrice": 700000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 5,
+          "name": "Long Island Nassau (20-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Great Neck", "state": "NY", "county": "Nassau", "medianPrice": 1400000, "status": "pending", "template": null},
+            {"id": null, "name": "Manhasset", "state": "NY", "county": "Nassau", "medianPrice": 1600000, "status": "pending", "template": null},
+            {"id": null, "name": "Port Washington", "state": "NY", "county": "Nassau", "medianPrice": 1300000, "status": "pending", "template": null},
+            {"id": null, "name": "Roslyn", "state": "NY", "county": "Nassau", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Garden City", "state": "NY", "county": "Nassau", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Rockville Centre", "state": "NY", "county": "Nassau", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Lynbrook", "state": "NY", "county": "Nassau", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Valley Stream", "state": "NY", "county": "Nassau", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Floral Park", "state": "NY", "county": "Nassau", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Mineola", "state": "NY", "county": "Nassau", "medianPrice": 600000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 6,
+          "name": "Suffolk County Long Island (30-50 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Huntington", "state": "NY", "county": "Suffolk", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Huntington Station", "state": "NY", "county": "Suffolk", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Cold Spring Harbor", "state": "NY", "county": "Suffolk", "medianPrice": 1400000, "status": "pending", "template": null},
+            {"id": null, "name": "Northport", "state": "NY", "county": "Suffolk", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Commack", "state": "NY", "county": "Suffolk", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Smithtown", "state": "NY", "county": "Suffolk", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Kings Park", "state": "NY", "county": "Suffolk", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Setauket", "state": "NY", "county": "Suffolk", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Port Jefferson", "state": "NY", "county": "Suffolk", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Babylon", "state": "NY", "county": "Suffolk", "medianPrice": 500000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 7,
+          "name": "Upper Westchester/Putnam (35-50 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Rye", "state": "NY", "county": "Westchester", "medianPrice": 1600000, "status": "pending", "template": null},
+            {"id": null, "name": "Rye Brook", "state": "NY", "county": "Westchester", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Harrison", "state": "NY", "county": "Westchester", "medianPrice": 1400000, "status": "pending", "template": null},
+            {"id": null, "name": "Purchase", "state": "NY", "county": "Westchester", "medianPrice": 2000000, "status": "pending", "template": null},
+            {"id": null, "name": "Armonk", "state": "NY", "county": "Westchester", "medianPrice": 1300000, "status": "pending", "template": null},
+            {"id": null, "name": "Bedford", "state": "NY", "county": "Westchester", "medianPrice": 1500000, "status": "pending", "template": null},
+            {"id": null, "name": "Chappaqua", "state": "NY", "county": "Westchester", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Pleasantville", "state": "NY", "county": "Westchester", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Tarrytown", "state": "NY", "county": "Westchester", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Sleepy Hollow", "state": "NY", "county": "Westchester", "medianPrice": 550000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 8,
+          "name": "Staten Island & Rockland (10-30 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Staten Island North Shore", "state": "NY", "county": "Richmond", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Staten Island South Shore", "state": "NY", "county": "Richmond", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Todt Hill", "state": "NY", "county": "Richmond", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Great Kills", "state": "NY", "county": "Richmond", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "New Dorp", "state": "NY", "county": "Richmond", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Nyack", "state": "NY", "county": "Rockland", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Piermont", "state": "NY", "county": "Rockland", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Tappan", "state": "NY", "county": "Rockland", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Pearl River", "state": "NY", "county": "Rockland", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Nanuet", "state": "NY", "county": "Rockland", "medianPrice": 500000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 9,
+          "name": "Morris & Union Counties NJ (20-35 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Morristown", "state": "NJ", "county": "Morris", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Madison", "state": "NJ", "county": "Morris", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Chatham", "state": "NJ", "county": "Morris", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Summit", "state": "NJ", "county": "Union", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Short Hills", "state": "NJ", "county": "Essex", "medianPrice": 1500000, "status": "pending", "template": null},
+            {"id": null, "name": "Millburn", "state": "NJ", "county": "Essex", "medianPrice": 1300000, "status": "pending", "template": null},
+            {"id": null, "name": "Westfield", "state": "NJ", "county": "Union", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Cranford", "state": "NJ", "county": "Union", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Scotch Plains", "state": "NJ", "county": "Union", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Fanwood", "state": "NJ", "county": "Union", "medianPrice": 550000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 10,
+          "name": "Somerset & Middlesex NJ (25-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Princeton", "state": "NJ", "county": "Mercer", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Metuchen", "state": "NJ", "county": "Middlesex", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Edison", "state": "NJ", "county": "Middlesex", "medianPrice": 525000, "status": "pending", "template": null},
+            {"id": null, "name": "New Brunswick", "state": "NJ", "county": "Middlesex", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Highland Park", "state": "NJ", "county": "Middlesex", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Basking Ridge", "state": "NJ", "county": "Somerset", "medianPrice": 900000, "status": "pending", "template": null},
+            {"id": null, "name": "Bernardsville", "state": "NJ", "county": "Somerset", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Bridgewater", "state": "NJ", "county": "Somerset", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Somerville", "state": "NJ", "county": "Somerset", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Bound Brook", "state": "NJ", "county": "Somerset", "medianPrice": 400000, "status": "pending", "template": null}
+          ]
+        }
+      ]
+    },
+    "dc_metro": {
+      "name": "Washington-Arlington-Alexandria Metro",
+      "population": "6.4M",
+      "status": "planned",
+      "totalNeighborhoods": 100,
+      "rings": [
+        {
+          "ring": 1,
+          "name": "Close-In Virginia (5-15 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Falls Church City", "state": "VA", "county": "Independent City", "medianPrice": 900000, "status": "pending", "template": null},
+            {"id": null, "name": "Tysons Corner", "state": "VA", "county": "Fairfax", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Vienna", "state": "VA", "county": "Fairfax", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Merrifield", "state": "VA", "county": "Fairfax", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Annandale", "state": "VA", "county": "Fairfax", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Baileys Crossroads", "state": "VA", "county": "Fairfax", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Seven Corners", "state": "VA", "county": "Fairfax", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Pimmit Hills", "state": "VA", "county": "Fairfax", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Idylwood", "state": "VA", "county": "Fairfax", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Dunn Loring", "state": "VA", "county": "Fairfax", "medianPrice": 700000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 2,
+          "name": "Close-In Maryland (5-15 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Silver Spring Downtown", "state": "MD", "county": "Montgomery", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Takoma Park", "state": "MD", "county": "Montgomery", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "College Park", "state": "MD", "county": "Prince George's", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Hyattsville", "state": "MD", "county": "Prince George's", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Riverdale Park", "state": "MD", "county": "Prince George's", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Mount Rainier", "state": "MD", "county": "Prince George's", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Kensington", "state": "MD", "county": "Montgomery", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Garrett Park", "state": "MD", "county": "Montgomery", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Somerset", "state": "MD", "county": "Montgomery", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Friendship Heights", "state": "MD", "county": "Montgomery", "medianPrice": 600000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 3,
+          "name": "Mid-Distance Virginia (15-25 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Reston", "state": "VA", "county": "Fairfax", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Herndon", "state": "VA", "county": "Fairfax", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Great Falls", "state": "VA", "county": "Fairfax", "medianPrice": 1500000, "status": "pending", "template": null},
+            {"id": null, "name": "Oakton", "state": "VA", "county": "Fairfax", "medianPrice": 900000, "status": "pending", "template": null},
+            {"id": null, "name": "Burke", "state": "VA", "county": "Fairfax", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Springfield", "state": "VA", "county": "Fairfax", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Fairfax City", "state": "VA", "county": "Independent City", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Centreville", "state": "VA", "county": "Fairfax", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Chantilly", "state": "VA", "county": "Fairfax", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Lorton", "state": "VA", "county": "Fairfax", "medianPrice": 600000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 4,
+          "name": "Mid-Distance Maryland (15-25 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Rockville", "state": "MD", "county": "Montgomery", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Potomac", "state": "MD", "county": "Montgomery", "medianPrice": 1300000, "status": "pending", "template": null},
+            {"id": null, "name": "North Bethesda", "state": "MD", "county": "Montgomery", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Gaithersburg", "state": "MD", "county": "Montgomery", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Wheaton", "state": "MD", "county": "Montgomery", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Olney", "state": "MD", "county": "Montgomery", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Bowie", "state": "MD", "county": "Prince George's", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Greenbelt", "state": "MD", "county": "Prince George's", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Laurel", "state": "MD", "county": "Prince George's", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Langley Park", "state": "MD", "county": "Prince George's", "medianPrice": 350000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 5,
+          "name": "Outer Suburbs (25-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Ashburn", "state": "VA", "county": "Loudoun", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Leesburg", "state": "VA", "county": "Loudoun", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Sterling", "state": "VA", "county": "Loudoun", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "South Riding", "state": "VA", "county": "Loudoun", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Brambleton", "state": "VA", "county": "Loudoun", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Woodbridge", "state": "VA", "county": "Prince William", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Manassas", "state": "VA", "county": "Independent City", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Gainesville", "state": "VA", "county": "Prince William", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Clarksburg", "state": "MD", "county": "Montgomery", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Germantown", "state": "MD", "county": "Montgomery", "medianPrice": 450000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 6,
+          "name": "Loudoun County Expanded (30-45 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Purcellville", "state": "VA", "county": "Loudoun", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Round Hill", "state": "VA", "county": "Loudoun", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Lovettsville", "state": "VA", "county": "Loudoun", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Middleburg", "state": "VA", "county": "Loudoun", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Aldie", "state": "VA", "county": "Loudoun", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Stone Ridge", "state": "VA", "county": "Loudoun", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Lansdowne", "state": "VA", "county": "Loudoun", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Broadlands", "state": "VA", "county": "Loudoun", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "One Loudoun", "state": "VA", "county": "Loudoun", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Dulles South", "state": "VA", "county": "Loudoun", "medianPrice": 600000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 7,
+          "name": "Frederick County MD (40-55 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Frederick Downtown", "state": "MD", "county": "Frederick", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Frederick North", "state": "MD", "county": "Frederick", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Urbana", "state": "MD", "county": "Frederick", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "New Market", "state": "MD", "county": "Frederick", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Middletown", "state": "MD", "county": "Frederick", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Walkersville", "state": "MD", "county": "Frederick", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Thurmont", "state": "MD", "county": "Frederick", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Emmitsburg", "state": "MD", "county": "Frederick", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Brunswick", "state": "MD", "county": "Frederick", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Point of Rocks", "state": "MD", "county": "Frederick", "medianPrice": 450000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 8,
+          "name": "Prince William Expanded (25-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Dale City", "state": "VA", "county": "Prince William", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Lake Ridge", "state": "VA", "county": "Prince William", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Dumfries", "state": "VA", "county": "Prince William", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Montclair", "state": "VA", "county": "Prince William", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Bristow", "state": "VA", "county": "Prince William", "medianPrice": 525000, "status": "pending", "template": null},
+            {"id": null, "name": "Nokesville", "state": "VA", "county": "Prince William", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Haymarket", "state": "VA", "county": "Prince William", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Manassas Park", "state": "VA", "county": "Independent City", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Occoquan", "state": "VA", "county": "Prince William", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Quantico", "state": "VA", "county": "Prince William", "medianPrice": 350000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 9,
+          "name": "Howard County MD (25-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Columbia", "state": "MD", "county": "Howard", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Ellicott City", "state": "MD", "county": "Howard", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Clarksville", "state": "MD", "county": "Howard", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Fulton", "state": "MD", "county": "Howard", "medianPrice": 900000, "status": "pending", "template": null},
+            {"id": null, "name": "Highland", "state": "MD", "county": "Howard", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Elkridge", "state": "MD", "county": "Howard", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Savage", "state": "MD", "county": "Howard", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Jessup", "state": "MD", "county": "Howard", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Maple Lawn", "state": "MD", "county": "Howard", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Kings Contrivance", "state": "MD", "county": "Howard", "medianPrice": 475000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 10,
+          "name": "Anne Arundel County (20-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Annapolis", "state": "MD", "county": "Anne Arundel", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Severna Park", "state": "MD", "county": "Anne Arundel", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Arnold", "state": "MD", "county": "Anne Arundel", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Crofton", "state": "MD", "county": "Anne Arundel", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Odenton", "state": "MD", "county": "Anne Arundel", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Glen Burnie", "state": "MD", "county": "Anne Arundel", "medianPrice": 325000, "status": "pending", "template": null},
+            {"id": null, "name": "Pasadena", "state": "MD", "county": "Anne Arundel", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Edgewater", "state": "MD", "county": "Anne Arundel", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Davidsonville", "state": "MD", "county": "Anne Arundel", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Gambrills", "state": "MD", "county": "Anne Arundel", "medianPrice": 550000, "status": "pending", "template": null}
+          ]
+        }
+      ]
+    },
+    "philadelphia_metro": {
+      "name": "Philadelphia-Camden-Wilmington Metro",
+      "population": "6.2M",
+      "status": "planned",
+      "totalNeighborhoods": 100,
+      "rings": [
+        {
+          "ring": 1,
+          "name": "Center City & Adjacent (0-3 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Society Hill", "state": "PA", "county": "Philadelphia", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Old City", "state": "PA", "county": "Philadelphia", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Washington Square West", "state": "PA", "county": "Philadelphia", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Graduate Hospital", "state": "PA", "county": "Philadelphia", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Queen Village", "state": "PA", "county": "Philadelphia", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Bella Vista", "state": "PA", "county": "Philadelphia", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Passyunk Square", "state": "PA", "county": "Philadelphia", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Northern Liberties", "state": "PA", "county": "Philadelphia", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Spring Garden", "state": "PA", "county": "Philadelphia", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Fairmount", "state": "PA", "county": "Philadelphia", "medianPrice": 450000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 2,
+          "name": "Inner Neighborhoods (3-6 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "University City", "state": "PA", "county": "Philadelphia", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Spruce Hill", "state": "PA", "county": "Philadelphia", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Powelton Village", "state": "PA", "county": "Philadelphia", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Manayunk", "state": "PA", "county": "Philadelphia", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Roxborough", "state": "PA", "county": "Philadelphia", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "East Falls", "state": "PA", "county": "Philadelphia", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Chestnut Hill", "state": "PA", "county": "Philadelphia", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Mount Airy", "state": "PA", "county": "Philadelphia", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Germantown", "state": "PA", "county": "Philadelphia", "medianPrice": 275000, "status": "pending", "template": null},
+            {"id": null, "name": "Point Breeze", "state": "PA", "county": "Philadelphia", "medianPrice": 325000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 3,
+          "name": "Main Line (10-20 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Ardmore", "state": "PA", "county": "Montgomery", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Bryn Mawr", "state": "PA", "county": "Montgomery", "medianPrice": 800000, "status": "pending", "template": null},
+            {"id": null, "name": "Haverford", "state": "PA", "county": "Delaware", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Narberth", "state": "PA", "county": "Montgomery", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Merion", "state": "PA", "county": "Montgomery", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Wynnewood", "state": "PA", "county": "Montgomery", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Wayne", "state": "PA", "county": "Delaware", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Villanova", "state": "PA", "county": "Delaware", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Radnor", "state": "PA", "county": "Delaware", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Gladwyne", "state": "PA", "county": "Montgomery", "medianPrice": 1500000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 4,
+          "name": "Delaware County & South (8-15 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Media", "state": "PA", "county": "Delaware", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Swarthmore", "state": "PA", "county": "Delaware", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Wallingford", "state": "PA", "county": "Delaware", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Springfield", "state": "PA", "county": "Delaware", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Drexel Hill", "state": "PA", "county": "Delaware", "medianPrice": 300000, "status": "pending", "template": null},
+            {"id": null, "name": "Upper Darby", "state": "PA", "county": "Delaware", "medianPrice": 250000, "status": "pending", "template": null},
+            {"id": null, "name": "Lansdowne", "state": "PA", "county": "Delaware", "medianPrice": 225000, "status": "pending", "template": null},
+            {"id": null, "name": "Marple Township", "state": "PA", "county": "Delaware", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Newtown Square", "state": "PA", "county": "Delaware", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Chester", "state": "PA", "county": "Delaware", "medianPrice": 125000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 5,
+          "name": "Camden County NJ (5-20 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Haddonfield", "state": "NJ", "county": "Camden", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Collingswood", "state": "NJ", "county": "Camden", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Cherry Hill", "state": "NJ", "county": "Camden", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Moorestown", "state": "NJ", "county": "Burlington", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Merchantville", "state": "NJ", "county": "Camden", "medianPrice": 275000, "status": "pending", "template": null},
+            {"id": null, "name": "Voorhees", "state": "NJ", "county": "Camden", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Marlton", "state": "NJ", "county": "Burlington", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Mount Laurel", "state": "NJ", "county": "Burlington", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Pennsauken", "state": "NJ", "county": "Camden", "medianPrice": 225000, "status": "pending", "template": null},
+            {"id": null, "name": "Camden Waterfront", "state": "NJ", "county": "Camden", "medianPrice": 200000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 6,
+          "name": "Montgomery County Expanded (15-30 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Conshohocken", "state": "PA", "county": "Montgomery", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "West Conshohocken", "state": "PA", "county": "Montgomery", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Plymouth Meeting", "state": "PA", "county": "Montgomery", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Blue Bell", "state": "PA", "county": "Montgomery", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Ambler", "state": "PA", "county": "Montgomery", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Fort Washington", "state": "PA", "county": "Montgomery", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Flourtown", "state": "PA", "county": "Montgomery", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Wyndmoor", "state": "PA", "county": "Montgomery", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Glenside", "state": "PA", "county": "Montgomery", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Jenkintown", "state": "PA", "county": "Montgomery", "medianPrice": 425000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 7,
+          "name": "Bucks County (20-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Doylestown", "state": "PA", "county": "Bucks", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "New Hope", "state": "PA", "county": "Bucks", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Newtown", "state": "PA", "county": "Bucks", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Yardley", "state": "PA", "county": "Bucks", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Langhorne", "state": "PA", "county": "Bucks", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Morrisville", "state": "PA", "county": "Bucks", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Bristol", "state": "PA", "county": "Bucks", "medianPrice": 300000, "status": "pending", "template": null},
+            {"id": null, "name": "Levittown", "state": "PA", "county": "Bucks", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Warminster", "state": "PA", "county": "Bucks", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Warrington", "state": "PA", "county": "Bucks", "medianPrice": 500000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 8,
+          "name": "Chester County (20-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "West Chester", "state": "PA", "county": "Chester", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Downingtown", "state": "PA", "county": "Chester", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Exton", "state": "PA", "county": "Chester", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Malvern", "state": "PA", "county": "Chester", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Paoli", "state": "PA", "county": "Chester", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Phoenixville", "state": "PA", "county": "Chester", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Kennett Square", "state": "PA", "county": "Chester", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Chadds Ford", "state": "PA", "county": "Chester", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Unionville", "state": "PA", "county": "Chester", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Devon", "state": "PA", "county": "Chester", "medianPrice": 700000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 9,
+          "name": "Burlington County NJ (15-35 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Medford", "state": "NJ", "county": "Burlington", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Medford Lakes", "state": "NJ", "county": "Burlington", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Cinnaminson", "state": "NJ", "county": "Burlington", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Riverton", "state": "NJ", "county": "Burlington", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Palmyra", "state": "NJ", "county": "Burlington", "medianPrice": 275000, "status": "pending", "template": null},
+            {"id": null, "name": "Burlington City", "state": "NJ", "county": "Burlington", "medianPrice": 250000, "status": "pending", "template": null},
+            {"id": null, "name": "Bordentown", "state": "NJ", "county": "Burlington", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Maple Shade", "state": "NJ", "county": "Burlington", "medianPrice": 275000, "status": "pending", "template": null},
+            {"id": null, "name": "Delran", "state": "NJ", "county": "Burlington", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Lumberton", "state": "NJ", "county": "Burlington", "medianPrice": 400000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 10,
+          "name": "Delaware Wilmington Area (25-40 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Wilmington Downtown", "state": "DE", "county": "New Castle", "medianPrice": 275000, "status": "pending", "template": null},
+            {"id": null, "name": "Trolley Square", "state": "DE", "county": "New Castle", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Greenville", "state": "DE", "county": "New Castle", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Centreville", "state": "DE", "county": "New Castle", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Hockessin", "state": "DE", "county": "New Castle", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Pike Creek", "state": "DE", "county": "New Castle", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Newark", "state": "DE", "county": "New Castle", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Bear", "state": "DE", "county": "New Castle", "medianPrice": 325000, "status": "pending", "template": null},
+            {"id": null, "name": "Middletown DE", "state": "DE", "county": "New Castle", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Claymont", "state": "DE", "county": "New Castle", "medianPrice": 275000, "status": "pending", "template": null}
+          ]
+        }
+      ]
+    },
+    "boston_metro": {
+      "name": "Boston-Cambridge-Newton Metro",
+      "population": "4.9M",
+      "status": "planned",
+      "totalNeighborhoods": 100,
+      "rings": [
+        {
+          "ring": 1,
+          "name": "Inner Core Boston (2-8 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Jamaica Plain", "state": "MA", "county": "Suffolk", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Roslindale", "state": "MA", "county": "Suffolk", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "West Roxbury", "state": "MA", "county": "Suffolk", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Hyde Park", "state": "MA", "county": "Suffolk", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Dorchester Savin Hill", "state": "MA", "county": "Suffolk", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Dorchester Ashmont", "state": "MA", "county": "Suffolk", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "South Boston", "state": "MA", "county": "Suffolk", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Charlestown", "state": "MA", "county": "Suffolk", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "East Boston", "state": "MA", "county": "Suffolk", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Allston", "state": "MA", "county": "Suffolk", "medianPrice": 650000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 2,
+          "name": "First-Ring Suburbs (5-12 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Watertown", "state": "MA", "county": "Middlesex", "medianPrice": 800000, "status": "pending", "template": null},
+            {"id": null, "name": "Belmont", "state": "MA", "county": "Middlesex", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Arlington", "state": "MA", "county": "Middlesex", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Medford", "state": "MA", "county": "Middlesex", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Malden", "state": "MA", "county": "Middlesex", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Everett", "state": "MA", "county": "Middlesex", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Chelsea", "state": "MA", "county": "Suffolk", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Revere", "state": "MA", "county": "Suffolk", "medianPrice": 525000, "status": "pending", "template": null},
+            {"id": null, "name": "Winthrop", "state": "MA", "county": "Suffolk", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Milton", "state": "MA", "county": "Norfolk", "medianPrice": 900000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 3,
+          "name": "Inner Suburbs (10-18 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Lexington", "state": "MA", "county": "Middlesex", "medianPrice": 1300000, "status": "pending", "template": null},
+            {"id": null, "name": "Winchester", "state": "MA", "county": "Middlesex", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Waltham", "state": "MA", "county": "Middlesex", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Needham", "state": "MA", "county": "Norfolk", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Dedham", "state": "MA", "county": "Norfolk", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Quincy", "state": "MA", "county": "Norfolk", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Braintree", "state": "MA", "county": "Norfolk", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Weymouth", "state": "MA", "county": "Norfolk", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Melrose", "state": "MA", "county": "Middlesex", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Stoneham", "state": "MA", "county": "Middlesex", "medianPrice": 650000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 4,
+          "name": "Mid Suburbs (15-25 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Concord", "state": "MA", "county": "Middlesex", "medianPrice": 1400000, "status": "pending", "template": null},
+            {"id": null, "name": "Lincoln", "state": "MA", "county": "Middlesex", "medianPrice": 1600000, "status": "pending", "template": null},
+            {"id": null, "name": "Weston", "state": "MA", "county": "Middlesex", "medianPrice": 2000000, "status": "pending", "template": null},
+            {"id": null, "name": "Wayland", "state": "MA", "county": "Middlesex", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Natick", "state": "MA", "county": "Middlesex", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Framingham", "state": "MA", "county": "Middlesex", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Sudbury", "state": "MA", "county": "Middlesex", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Hingham", "state": "MA", "county": "Plymouth", "medianPrice": 1000000, "status": "pending", "template": null},
+            {"id": null, "name": "Cohasset", "state": "MA", "county": "Norfolk", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Norwell", "state": "MA", "county": "Plymouth", "medianPrice": 850000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 5,
+          "name": "North Shore & South Shore (20-35 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Marblehead", "state": "MA", "county": "Essex", "medianPrice": 900000, "status": "pending", "template": null},
+            {"id": null, "name": "Swampscott", "state": "MA", "county": "Essex", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Salem", "state": "MA", "county": "Essex", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Beverly", "state": "MA", "county": "Essex", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Gloucester", "state": "MA", "county": "Essex", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Rockport", "state": "MA", "county": "Essex", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Scituate", "state": "MA", "county": "Plymouth", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Duxbury", "state": "MA", "county": "Plymouth", "medianPrice": 950000, "status": "pending", "template": null},
+            {"id": null, "name": "Plymouth", "state": "MA", "county": "Plymouth", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Marshfield", "state": "MA", "county": "Plymouth", "medianPrice": 650000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 6,
+          "name": "North Shore Expanded (25-45 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Manchester-by-the-Sea", "state": "MA", "county": "Essex", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Essex", "state": "MA", "county": "Essex", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Ipswich", "state": "MA", "county": "Essex", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Hamilton", "state": "MA", "county": "Essex", "medianPrice": 800000, "status": "pending", "template": null},
+            {"id": null, "name": "Wenham", "state": "MA", "county": "Essex", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Topsfield", "state": "MA", "county": "Essex", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Boxford", "state": "MA", "county": "Essex", "medianPrice": 800000, "status": "pending", "template": null},
+            {"id": null, "name": "Newburyport", "state": "MA", "county": "Essex", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Newbury", "state": "MA", "county": "Essex", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Rowley", "state": "MA", "county": "Essex", "medianPrice": 600000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 7,
+          "name": "MetroWest Expanded (20-35 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Ashland", "state": "MA", "county": "Middlesex", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Holliston", "state": "MA", "county": "Middlesex", "medianPrice": 700000, "status": "pending", "template": null},
+            {"id": null, "name": "Hopkinton", "state": "MA", "county": "Middlesex", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Sherborn", "state": "MA", "county": "Middlesex", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Dover", "state": "MA", "county": "Norfolk", "medianPrice": 1400000, "status": "pending", "template": null},
+            {"id": null, "name": "Medfield", "state": "MA", "county": "Norfolk", "medianPrice": 850000, "status": "pending", "template": null},
+            {"id": null, "name": "Millis", "state": "MA", "county": "Norfolk", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Norfolk", "state": "MA", "county": "Norfolk", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Wrentham", "state": "MA", "county": "Norfolk", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Franklin", "state": "MA", "county": "Norfolk", "medianPrice": 600000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 8,
+          "name": "Worcester Corridor (30-45 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Westborough", "state": "MA", "county": "Worcester", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Southborough", "state": "MA", "county": "Worcester", "medianPrice": 800000, "status": "pending", "template": null},
+            {"id": null, "name": "Northborough", "state": "MA", "county": "Worcester", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Shrewsbury", "state": "MA", "county": "Worcester", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Grafton", "state": "MA", "county": "Worcester", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Millbury", "state": "MA", "county": "Worcester", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Auburn", "state": "MA", "county": "Worcester", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Worcester West Side", "state": "MA", "county": "Worcester", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Worcester Tatnuck", "state": "MA", "county": "Worcester", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Holden", "state": "MA", "county": "Worcester", "medianPrice": 475000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 9,
+          "name": "Southern NH (35-50 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Nashua", "state": "NH", "county": "Hillsborough", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Hudson", "state": "NH", "county": "Hillsborough", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Merrimack", "state": "NH", "county": "Hillsborough", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Bedford NH", "state": "NH", "county": "Hillsborough", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Amherst", "state": "NH", "county": "Hillsborough", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Hollis", "state": "NH", "county": "Hillsborough", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Brookline NH", "state": "NH", "county": "Hillsborough", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Salem NH", "state": "NH", "county": "Rockingham", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Windham", "state": "NH", "county": "Rockingham", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Londonderry", "state": "NH", "county": "Rockingham", "medianPrice": 500000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 10,
+          "name": "South Shore & Cape Gateway (30-50 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Hanover", "state": "MA", "county": "Plymouth", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Pembroke", "state": "MA", "county": "Plymouth", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Kingston", "state": "MA", "county": "Plymouth", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Carver", "state": "MA", "county": "Plymouth", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Wareham", "state": "MA", "county": "Plymouth", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Bourne", "state": "MA", "county": "Barnstable", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Sandwich", "state": "MA", "county": "Barnstable", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Falmouth", "state": "MA", "county": "Barnstable", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Mashpee", "state": "MA", "county": "Barnstable", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Barnstable", "state": "MA", "county": "Barnstable", "medianPrice": 600000, "status": "pending", "template": null}
+          ]
+        }
+      ]
+    },
+    "ct_metro": {
+      "name": "Bridgeport-Stamford-Norwalk Metro",
+      "population": "1.0M",
+      "status": "planned",
+      "totalNeighborhoods": 50,
+      "rings": [
+        {
+          "ring": 1,
+          "name": "Coastal Towns (5-15 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Westport", "state": "CT", "county": "Fairfield", "medianPrice": 1500000, "status": "pending", "template": null},
+            {"id": null, "name": "Darien", "state": "CT", "county": "Fairfield", "medianPrice": 1800000, "status": "pending", "template": null},
+            {"id": null, "name": "Greenwich Cos Cob", "state": "CT", "county": "Fairfield", "medianPrice": 1300000, "status": "pending", "template": null},
+            {"id": null, "name": "Greenwich Old Greenwich", "state": "CT", "county": "Fairfield", "medianPrice": 2000000, "status": "pending", "template": null},
+            {"id": null, "name": "Greenwich Riverside", "state": "CT", "county": "Fairfield", "medianPrice": 1600000, "status": "pending", "template": null},
+            {"id": null, "name": "Greenwich Byram", "state": "CT", "county": "Fairfield", "medianPrice": 900000, "status": "pending", "template": null},
+            {"id": null, "name": "Rowayton", "state": "CT", "county": "Fairfield", "medianPrice": 1400000, "status": "pending", "template": null},
+            {"id": null, "name": "Saugatuck", "state": "CT", "county": "Fairfield", "medianPrice": 1200000, "status": "pending", "template": null},
+            {"id": null, "name": "Southport", "state": "CT", "county": "Fairfield", "medianPrice": 1500000, "status": "pending", "template": null},
+            {"id": null, "name": "Black Rock", "state": "CT", "county": "Fairfield", "medianPrice": 400000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 2,
+          "name": "Mid-County Towns (10-20 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Weston", "state": "CT", "county": "Fairfield", "medianPrice": 1100000, "status": "pending", "template": null},
+            {"id": null, "name": "Easton", "state": "CT", "county": "Fairfield", "medianPrice": 750000, "status": "pending", "template": null},
+            {"id": null, "name": "Redding", "state": "CT", "county": "Fairfield", "medianPrice": 650000, "status": "pending", "template": null},
+            {"id": null, "name": "Bethel", "state": "CT", "county": "Fairfield", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Brookfield", "state": "CT", "county": "Fairfield", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Newtown", "state": "CT", "county": "Fairfield", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Monroe", "state": "CT", "county": "Fairfield", "medianPrice": 475000, "status": "pending", "template": null},
+            {"id": null, "name": "Trumbull", "state": "CT", "county": "Fairfield", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Shelton", "state": "CT", "county": "Fairfield", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "Stratford", "state": "CT", "county": "Fairfield", "medianPrice": 350000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 3,
+          "name": "Bridgeport Area (5-15 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Bridgeport North End", "state": "CT", "county": "Fairfield", "medianPrice": 250000, "status": "pending", "template": null},
+            {"id": null, "name": "Bridgeport West Side", "state": "CT", "county": "Fairfield", "medianPrice": 275000, "status": "pending", "template": null},
+            {"id": null, "name": "Bridgeport East Side", "state": "CT", "county": "Fairfield", "medianPrice": 225000, "status": "pending", "template": null},
+            {"id": null, "name": "Bridgeport Downtown", "state": "CT", "county": "Fairfield", "medianPrice": 300000, "status": "pending", "template": null},
+            {"id": null, "name": "Milford", "state": "CT", "county": "New Haven", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Orange", "state": "CT", "county": "New Haven", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Woodbridge", "state": "CT", "county": "New Haven", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Ansonia", "state": "CT", "county": "New Haven", "medianPrice": 250000, "status": "pending", "template": null},
+            {"id": null, "name": "Derby", "state": "CT", "county": "New Haven", "medianPrice": 275000, "status": "pending", "template": null},
+            {"id": null, "name": "Seymour", "state": "CT", "county": "New Haven", "medianPrice": 325000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 4,
+          "name": "New Haven Corridor (20-35 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "New Haven East Rock", "state": "CT", "county": "New Haven", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "New Haven Westville", "state": "CT", "county": "New Haven", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "New Haven Wooster Square", "state": "CT", "county": "New Haven", "medianPrice": 425000, "status": "pending", "template": null},
+            {"id": null, "name": "New Haven Downtown", "state": "CT", "county": "New Haven", "medianPrice": 350000, "status": "pending", "template": null},
+            {"id": null, "name": "Hamden", "state": "CT", "county": "New Haven", "medianPrice": 325000, "status": "pending", "template": null},
+            {"id": null, "name": "North Haven", "state": "CT", "county": "New Haven", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Branford", "state": "CT", "county": "New Haven", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Guilford", "state": "CT", "county": "New Haven", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Madison", "state": "CT", "county": "New Haven", "medianPrice": 600000, "status": "pending", "template": null},
+            {"id": null, "name": "Cheshire", "state": "CT", "county": "New Haven", "medianPrice": 450000, "status": "pending", "template": null}
+          ]
+        },
+        {
+          "ring": 5,
+          "name": "Outer Ring (25-45 miles)",
+          "status": "pending",
+          "neighborhoods": [
+            {"id": null, "name": "Wallingford", "state": "CT", "county": "New Haven", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Meriden", "state": "CT", "county": "New Haven", "medianPrice": 275000, "status": "pending", "template": null},
+            {"id": null, "name": "Middletown", "state": "CT", "county": "Middlesex", "medianPrice": 325000, "status": "pending", "template": null},
+            {"id": null, "name": "Durham", "state": "CT", "county": "Middlesex", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Killingworth", "state": "CT", "county": "Middlesex", "medianPrice": 450000, "status": "pending", "template": null},
+            {"id": null, "name": "Clinton", "state": "CT", "county": "Middlesex", "medianPrice": 400000, "status": "pending", "template": null},
+            {"id": null, "name": "Old Saybrook", "state": "CT", "county": "Middlesex", "medianPrice": 500000, "status": "pending", "template": null},
+            {"id": null, "name": "Essex", "state": "CT", "county": "Middlesex", "medianPrice": 550000, "status": "pending", "template": null},
+            {"id": null, "name": "Deep River", "state": "CT", "county": "Middlesex", "medianPrice": 375000, "status": "pending", "template": null},
+            {"id": null, "name": "Chester", "state": "CT", "county": "Middlesex", "medianPrice": 425000, "status": "pending", "template": null}
+          ]
+        }
+      ]
+    }
+  },
+  "published": {
+    "note": "Blogs 1-212 already published - see usta-react/src/website/content/blog/",
+    "count": 212,
+    "lastPublishedId": 212
+  }
+}
